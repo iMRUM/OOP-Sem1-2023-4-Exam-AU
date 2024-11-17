@@ -66,8 +66,12 @@ The project is divided into four key modules:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/AirlineManager.git
-   cd AirlineManager
+   git clone -n --depth=1 --filter=tree:0 \
+  https://github.com/iMRUM/OOP-Sem1-2023-4-Exam-AU
+   cd OOP-Sem1-2023-4-Exam-AU
+   git sparse-checkout set --no-cone AirlineManager
+   git checkout
+
    ```
 
 2. Compile the project:
